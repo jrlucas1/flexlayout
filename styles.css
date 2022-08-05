@@ -1,0 +1,28 @@
+body{
+    width: 85%;
+    margin: auto;
+}
+header,nav, footer{
+    background-color: silver;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.flex-container1{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-container1 > div {
+    background-color: silver;
+    padding: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .flex-container1 {
+    flex-direction: column;
+    }
+}
