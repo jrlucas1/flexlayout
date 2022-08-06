@@ -1,16 +1,42 @@
 body{
-    width: 85%;
     margin: auto;
+    width: 90%;
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
 }
-header,nav, footer{
-    background-color: silver;
+header, footer{
     padding: 10px;
     text-align: center;
-    margin: 10px;
+    background-color: white;
 }
+
+main{
+    background-color: white;
+    text-align: justify;
+    margin: auto;
+}
+
+.nav-bar{
+    list-style-type: none;
+    background-color: #1D1C1A;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-item{
+    padding: 20px;
+} 
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+
 .flex-container1{
     display: flex;
     flex-flow: row nowrap;
+    background-color: white;
 }
 
 .flex-container1 > div {
@@ -22,7 +48,7 @@ header,nav, footer{
 
 
 @media (max-width: 800px) {
-    .flex-container1 {
+    .flex-container1, .nav-bar {
     flex-direction: column;
     }
 }
