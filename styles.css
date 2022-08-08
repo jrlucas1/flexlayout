@@ -8,6 +8,7 @@ header, footer{
     padding: 10px;
     text-align: center;
     background-color: white;
+    margin-top: 10px;
 }
 
 main{
@@ -46,6 +47,35 @@ main{
     margin: 10px;
 }
 
+#conteudo_dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    list-style: none;
+}
+
+#conteudo_dropdown li{
+    float: none;
+    }
+
+#conteudo_dropdown a {
+    color: #f9f9f9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+    #conteudo_dropdown a:hover {
+    background-color: silver
+}
+
+#dropdown:hover #conteudo_dropdown {
+    display: block;
+} 
+    
 
 @media (max-width: 800px) {
     .flex-container1, .nav-bar {
