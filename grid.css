@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+    margin: auto;
+    width: 75%;
+}
+
+header, footer{
+    background-color: silver;
+    padding: 20px;
+    margin:10px 0px;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    column-gap: 5px;
+}
+.grid div{
+    background-color: silver;
+    text-align: center;
+}
+
+.item1{
+    grid-column: 1;
+    padding: 50px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: rgb(40, 40, 40);
+    padding: 50px;
+}
+
+.item3{
+    grid-column: 5;
+    padding: 50px;
+}
+
+@media (max-width: 800px) {
+    .grid{
+        display: block;
+    }
+}
+
